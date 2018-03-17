@@ -8,19 +8,22 @@ html {
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	background: radial-gradient(at top, #D2466B 1%, #080D2C);
 	background-repeat: no-repeat;
 	height: 100%;
 
 }
 
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
 form {
 	position: relative;
 	width: 450px;
-	margin: 0 auto;
 } 
 
 .logo {
