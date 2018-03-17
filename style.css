@@ -1,0 +1,46 @@
+.input input {
+	width: 375px;
+	height: 65px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.input img {
+	width: 30px;
+	height: 30px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	float: left;
+	
+}
+
+.input {
+	margin-bottom: 25px;
+	width: 450px;
+}
+
+#logo {
+	width: 75px;
+	position: absolute;
+	left: 225px;
+	top: -160px;
+}
+
+body {
+	background: radial-gradient(at top, #D2466B 1%, #080D2C);
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+form {
+	position: relative;
+} 
+
+svg {
+	margin-bottom: 40px;
+}

@@ -2,16 +2,21 @@
 <html>
 <head>
 	<title>AuthForm</title>
+	<link type="text/css" href="style.css" rel="stylesheet">
 </head>
 <body>
-	<img src="/img/user.png" />
+	<svg width="100%">
+		<circle r=75 cx="260" cy="75" stroke="white" stroke-width="2" fill="none"/>
+	</svg>
+	
 	<form>
+		<img src="img/user.svg" id="logo"/>
 		<div class="input">
-			<img src="/img/user.png" />
+			<img src="img/user.svg" />
 			<input type="text" name="username" placeholder="USERNAME" required />
 		</div>
 		<div class="input">
-			<img src="/img/pass.png" />
+			<img src="img/lock.svg" />
 			<input type="password" name="password" placeholder="********" required />
 		</div>
 		<button type="submit">LOGIN</button>
