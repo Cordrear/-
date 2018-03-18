@@ -24,21 +24,47 @@ body {
 form {
 	position: relative;
 	width: 450px;
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid #D2D2D2;
 	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 } 
 
 .logo {
-	width: 150px;
-	height: 150px;
-	border: 2px solid white;
+	width: 176px;
+	height: 176px;
+	border: 2px solid #D2D2D2;
 	border-radius: 50%;
 	margin: 0 auto 35px;
+	display: inline-block;
+	position: relative;
+	background: url("img/user.svg") 50% 50% no-repeat;
+	background-size: 40%;
 }
 
-.logo img{
-	width: 75px;
-	display: inline-block;
+.logo::before {
+	content: "";
+	position: absolute;
+	left: -137px;
+	top: 88px;
+	display: block;
+	width: 135px; /* (450-176)/2 */
+	border-bottom: 2px solid #D2D2D2;
+}
+
+.logo::after {
+	content: "";
+	position: absolute;
+	left: 177px;
+	top: 88px;
+	display: block;
+	width: 135px; /* (450-176)/2 */
+	border-bottom: 2px solid #D2D2D2;
+}
+
+.logo img {
+	width: 75px;	
 	margin: 37px 37px;
 }
 
@@ -46,10 +72,10 @@ form {
 	margin-bottom: 25px;
 	width: 450px;
 	height: 65px;
-	border: 2px solid white;
+	border: 2px solid #D2D2D2;
 	border-radius: 10px;
 	overflow: hidden;
-
+	box-sizing: border-box;
 }
 
 .input img {
@@ -60,13 +86,16 @@ form {
 }
 
 .input input {
-	width: 380px;
+	width: 376px;
 	height: 65px;
 	padding-left: 20px;
 	box-sizing: border-box;
 	border: none;
 	font-size: 14pt;
 	font-weight: bold;
+	text-transform: uppercase;
+	outline: none;
+	background-color: #D2D2D2;
 }
 
 form button {
@@ -77,13 +106,16 @@ form button {
 	margin-top: 10px;
 	margin-bottom: 60px;
 	background-color: #FE5387;
-	color: white;
+	color: #D2D2D2;
 	font-size: 16pt;
+	text-transform: uppercase;
+	outline: none;
 }
 
 form a {
 	float: right;
-	color: white;
+	color: #D2D2D2;
 	text-decoration: none;
 	font-style: italic;
+	padding-right: 5px;
 }
