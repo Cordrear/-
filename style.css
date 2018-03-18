@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Raleway', sans-serif;
 }
 
 html {
@@ -11,7 +12,6 @@ body {
 	background: radial-gradient(at top, #D2466B 1%, #080D2C);
 	background-repeat: no-repeat;
 	height: 100%;
-
 }
 
 .content {
@@ -24,6 +24,8 @@ body {
 form {
 	position: relative;
 	width: 450px;
+	border-bottom: 2px solid white;
+	padding-bottom: 50px;
 } 
 
 .logo {
@@ -45,9 +47,9 @@ form {
 	width: 450px;
 	height: 65px;
 	border: 2px solid white;
-	
 	border-radius: 10px;
 	overflow: hidden;
+
 }
 
 .input img {
@@ -63,4 +65,25 @@ form {
 	padding-left: 20px;
 	box-sizing: border-box;
 	border: none;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+form button {
+	width: 450px;
+	height: 65px;
+	border: none;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	background-color: #FE5387;
+	color: white;
+	font-size: 16pt;
+}
+
+form a {
+	float: right;
+	color: white;
+	text-decoration: none;
+	font-style: italic;
 }
