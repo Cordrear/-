@@ -112,6 +112,14 @@ form button {
 	outline: none;
 }
 
+form button:hover {
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+form button:active {
+	box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+
 .checkbox {
 	display: block;
 	position: relative;
@@ -119,6 +127,7 @@ form button {
 	float: left;
 	font-size: 12pt;
 	color: #D2D2D2;
+	cursor: pointer;
 }
 
 .checkbox input {
@@ -163,4 +172,13 @@ form a {
 	font-style: italic;
 	padding-right: 5px;
 
+}
+
+form a:hover {
+	text-decoration: underline;
+}
+
+form a:active {
+	background-color: #D2D2D2;
+	color: #FE5387;
 }
