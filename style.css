@@ -23,7 +23,7 @@ body {
 
 form {
 	position: relative;
-	width: 550px;
+	width: 450px;
 	border-bottom: 2px solid #D2D2D2;
 	padding-bottom: 50px;
 	display: flex;
@@ -43,23 +43,23 @@ form {
 	background-size: 40%;
 }
 
-.logo::before {
+form::before {
 	content: "";
 	position: absolute;
-	left: -137px;
+	left: 0;
 	top: 88px;
 	display: block;
-	width: 135px; /* (450-176)/2 */
+	width: calc((100% - 176px) / 2);
 	border-bottom: 2px solid #D2D2D2;
 }
 
-.logo::after {
+form::after {
 	content: "";
 	position: absolute;
-	left: 177px;
+	right: 0;
 	top: 88px;
 	display: block;
-	width: 135px; /* (450-176)/2 */
+	width: calc((100% - 176px) / 2);
 	border-bottom: 2px solid #D2D2D2;
 }
 
