@@ -9,7 +9,11 @@ html {
 }
 
 body {
-	background: radial-gradient(circle at top, #EE7A62, #FE5387, darkblue, navy, midnightblue);
+	background: radial-gradient(circle at top, 
+		#E77265, #E36566, #DE5667, #D34668, 
+		#CA3E69, #B5356B, #A4326B, #81316A,
+		#673268, #49316A, #2B2E65, #18295D,
+		#152352, #111943, #0C1438, #080D2D);
 	background-repeat: no-repeat;
 	height: 100%;
 }
