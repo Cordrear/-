@@ -9,7 +9,7 @@ html {
 }
 
 body {
-	background: radial-gradient(at top, #D2466B 1%, #080D2C);
+	background: radial-gradient(circle at top, #EE7A62, #FE5387, darkblue, navy, midnightblue);
 	background-repeat: no-repeat;
 	height: 100%;
 }
@@ -110,6 +110,7 @@ form button {
 	font-size: 16pt;
 	text-transform: uppercase;
 	outline: none;
+	cursor: pointer;
 }
 
 form button:hover {
