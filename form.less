@@ -1,0 +1,105 @@
+@outline-color: #D2D2D2;
+
+form {
+	position: relative;
+	width: 450px;
+	border-bottom: 2px solid @outline-color;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 88px;
+		display: block;
+		width: calc((100% - 176px) / 2);
+		border-bottom: 2px solid @outline-color;	
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 88px;
+		display: block;
+		width: calc((100% - 176px) / 2);
+		border-bottom: 2px solid @outline-color;
+	}
+	.logo {
+		width: 176px;
+		height: 176px;
+		border: 2px solid @outline-color;
+		border-radius: 50%;
+		margin: 0 auto 35px;
+		display: inline-block;
+		position: relative;
+		background: url("img/user.svg") 50% 50% no-repeat;
+		background-size: 40%;
+		img {
+			width: 75px;	
+			margin: 37px 37px;	
+		}
+	}
+	.input {
+		margin-bottom: 25px;
+		width: 100%;
+		height: 65px;
+		border: 2px solid @outline-color;
+		border-radius: 10px;
+		overflow: hidden;
+		box-sizing: border-box;
+		img {
+			width: 30px;
+			height: 30px;
+			margin: 15px 20px 20px 20px;
+			float: left;
+		}
+		input {
+			width: calc(100% - 70px);
+			height: 65px;
+			padding-left: 20px;
+			box-sizing: border-box;
+			border: none;
+			font-size: 14pt;
+			font-weight: bold;
+			text-transform: uppercase;
+			outline: none;
+			background-color: @outline-color;
+		}
+	}
+	button {
+		width: calc(100%);
+		height: 65px;
+		border: none;
+		border-radius: 10px;
+		margin-top: 10px;
+		margin-bottom: 60px;
+		background-color: #FE5387;
+		color: @outline-color;
+		font-size: 16pt;
+		text-transform: uppercase;
+		outline: none;
+		cursor: pointer;
+		&:hover {
+			box-shadow: 0 0 20px rgba(0,0,0,0.5);
+		}
+		&:active {
+			box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+		}
+	}
+	a {
+		float: right;
+		color: @outline-color;
+		text-decoration: none;
+		font-style: italic;
+		padding-right: 5px;
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active {
+			background-color: @outline-color;
+			color: #FE5387;
+		}
+	}
+} 
